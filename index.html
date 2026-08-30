@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Minuto a Minuto — Declaración tras el Consejo de Ministros</title>
+
+<meta name="description" content="Seguimiento ciudadano, anclado al minuto exacto del video, de los anuncios hechos por la Presidencia de Colombia tras el Consejo de Ministros de agosto de 2026.">
+<meta name="author" content="Vibras Positivas HM">
+<meta name="theme-color" content="#14282F">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2314282F'/><rect x='14' y='30' width='36' height='3' fill='%23C8901E'/><rect x='14' y='20' width='24' height='3' fill='%23EEF1EE'/><rect x='14' y='40' width='30' height='3' fill='%23EEF1EE'/></svg>">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vibras Positivas HM">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://vibraspositivashm.com/consejo-ministros/">
+<meta property="og:title" content="Minuto a Minuto — Declaración tras el Consejo de Ministros">
+<meta property="og:description" content="16 anuncios de la Presidencia, cada uno anclado al segundo exacto del video oficial. Para que cualquier ciudadano verifique por su cuenta.">
+<meta property="og:image" content="https://vibraspositivashm.com/consejo-ministros/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Minuto a Minuto — seguimiento ciudadano al Consejo de Ministros">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Minuto a Minuto — Declaración tras el Consejo de Ministros">
+<meta name="twitter:description" content="16 anuncios de la Presidencia, cada uno anclado al segundo exacto del video oficial.">
+<meta name="twitter:image" content="https://vibraspositivashm.com/consejo-ministros/og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --papel:#EEF1EE;
+  --papel-alto:#F8FAF8;
+  --tinta:#14282F;
+  --tinta-70:rgba(20,40,47,.70);
+  --tinta-45:rgba(20,40,47,.45);
+  --tinta-12:rgba(20,40,47,.12);
+  --sello:#C8901E;
+  --verde:#2F6B4F;
+  --vino:#8E3B2E;
+  --azul:#2B5171;
+  --violeta:#5B4272;
+  --max:44rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--papel);color:var(--tinta);
+  font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.franklin,button,input{font-family:"Libre Franklin",system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+:focus-visible{outline:2.5px solid var(--sello);outline-offset:3px;border-radius:3px}
+
+/* ---------- Encabezado ---------- */
+header{background:var(--tinta);color:var(--papel);padding:26px 0 0}
+.kicker{font-size:12.5px;letter-spacing:.06em;font-weight:600;color:var(--sello);
+  font-family:"Libre Franklin",sans-serif;margin:0 0 10px}
+h1{font-size:clamp(28px,8.5vw,42px);line-height:1.06;font-weight:800;
+  letter-spacing:-.022em;margin:0 0 12px;max-width:15ch}
+.sub{font-size:16px;line-height:1.55;color:rgba(238,241,238,.78);margin:0 0 22px;max-width:40ch}
+.sub b{font-weight:600;color:var(--papel)}
+
+/* ---------- El minutero: elemento firma ---------- */
+.minutero{padding:0 0 24px}
+.minutero-cap{display:flex;justify-content:space-between;align-items:baseline;
+  font-family:"Libre Franklin",sans-serif;font-size:11.5px;font-weight:600;
+  color:rgba(238,241,238,.55);font-variant-numeric:tabular-nums;margin-bottom:9px}
+.pista{position:relative;height:46px;border-top:1px solid rgba(238,241,238,.22);
+  border-bottom:1px solid rgba(238,241,238,.22)}
+.tic{position:absolute;top:0;bottom:0;width:22px;margin-left:-11px;padding:0;
+  background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tic::after{content:"";position:absolute;left:10px;top:9px;bottom:9px;width:2.5px;
+  background:var(--sello);border-radius:2px;transition:transform .18s,background .18s}
+.tic:hover::after,.tic:focus-visible::after{transform:scaleY(1.34);background:var(--papel)}
+.tic[data-eje="2"]::after{background:#E0B05A}
+.tic[data-eje="3"]::after{background:#7FA98D}
+.tic[data-eje="4"]::after{background:#8FB0CC}
+.tic[data-eje="5"]::after{background:#AC9BC4}
+.minutero-nota{font-family:"Libre Franklin",sans-serif;font-size:12.5px;
+  color:rgba(238,241,238,.55);margin:10px 0 0}
+
+/* ---------- Aviso ---------- */
+.aviso{background:var(--papel-alto);border-bottom:1px solid var(--tinta-12);
+  padding:16px 0;font-size:14.5px;line-height:1.55;color:var(--tinta-70)}
+.aviso b{color:var(--tinta);font-weight:600}
+
+/* ---------- Controles ---------- */
+.controles{position:sticky;top:0;z-index:20;background:var(--papel);
+  border-bottom:1px solid var(--tinta-12);padding:12px 0 11px}
+.buscar{width:100%;padding:11px 14px;font-size:16px;font-weight:400;
+  border:1.5px solid var(--tinta-12);border-radius:8px;background:var(--papel-alto);
+  color:var(--tinta)}
+.buscar::placeholder{color:var(--tinta-45)}
+.chips{display:flex;gap:7px;overflow-x:auto;margin-top:10px;padding-bottom:2px;
+  scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px;
+  border:1.5px solid var(--tinta-12);background:transparent;color:var(--tinta-70);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
+
+/* ---------- Folios ---------- */
+main{padding:8px 0 0}
+.grupo-tit{font-size:13px;font-weight:800;letter-spacing:.02em;margin:30px 0 4px;
+  display:flex;align-items:center;gap:9px}
+.punto{width:9px;height:9px;border-radius:2px;flex:0 0 auto}
+.grupo-desc{font-size:14.5px;color:var(--tinta-70);margin:0 0 14px;padding-left:18px;max-width:46ch}
+
+.folio{border-left:3px solid var(--tinta-12);padding:14px 0 16px 15px;margin-bottom:2px;
+  scroll-margin-top:118px}
+.folio.resaltado{background:linear-gradient(90deg,rgba(200,144,30,.16),transparent 72%)}
+.folio-cab{display:flex;align-items:baseline;gap:11px;margin-bottom:5px}
+.tc{font-family:"Libre Franklin",sans-serif;font-size:13px;font-weight:600;
+  font-variant-numeric:tabular-nums;color:var(--sello);text-decoration:none;
+  border-bottom:1.5px solid rgba(200,144,30,.35);padding-bottom:1px;flex:0 0 auto}
+.tc:hover{border-bottom-color:var(--sello)}
+.etiq{font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:600;
+  color:var(--tinta-45)}
+.folio h3{font-size:18.5px;line-height:1.3;font-weight:800;letter-spacing:-.012em;
+  margin:0 0 6px;font-family:"Libre Franklin",sans-serif}
+.folio p{margin:0;color:var(--tinta-70);font-size:16.5px;line-height:1.6}
+.folio .dato{margin-top:9px;font-size:14.5px;color:var(--tinta);
+  border-left:2px solid var(--verde);padding-left:11px;line-height:1.5}
+.folio .dato b{font-weight:600}
+.vacio{padding:40px 0;text-align:center;color:var(--tinta-45);font-size:16px}
+
+/* ---------- Verificar ---------- */
+.verificar{background:var(--tinta);color:var(--papel);margin-top:44px;padding:34px 0}
+.verificar h2{font-size:22px;font-weight:800;letter-spacing:-.015em;margin:0 0 8px}
+.verificar > .wrap > p{color:rgba(238,241,238,.75);font-size:16px;margin:0 0 20px;max-width:44ch}
+.enlaces{list-style:none;padding:0;margin:0}
+.enlaces li{border-top:1px solid rgba(238,241,238,.16)}
+.enlaces a{display:block;padding:13px 0;text-decoration:none}
+.enlaces .n{font-family:"Libre Franklin",sans-serif;font-weight:600;font-size:15.5px;
+  color:var(--papel);display:block}
+.enlaces .d{font-size:14px;color:rgba(238,241,238,.6);display:block;margin-top:2px}
+.enlaces a:hover .n{color:var(--sello)}
+
+/* ---------- Acciones ---------- */
+.acciones{padding:26px 0 8px;display:flex;flex-direction:column;gap:9px}
+.btn{font-size:15.5px;font-weight:600;padding:13px 18px;border-radius:8px;cursor:pointer;
+  border:1.5px solid var(--tinta);background:transparent;color:var(--tinta);text-align:center;
+  text-decoration:none;display:block}
+.btn.lleno{background:var(--tinta);color:var(--papel)}
+.btn[hidden]{display:none}
+
+footer{padding:26px 0 40px;font-size:13.5px;color:var(--tinta-45);line-height:1.6;
+  border-top:1px solid var(--tinta-12);margin-top:26px}
+footer strong{color:var(--tinta-70);font-weight:600;display:block;margin-bottom:4px;
+  font-family:"Libre Franklin",sans-serif;font-size:13px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+@media(min-width:640px){ .acciones{flex-direction:row} .btn{flex:1} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Seguimiento ciudadano · Vibras Positivas HM</p>
+    <h1>Qué se anunció, en qué minuto</h1>
+    <p class="sub">Declaración a medios de la Presidencia de la República tras un Consejo de Ministros de más de siete horas. <b>16 anuncios</b> en cinco frentes, cada uno enlazado al segundo exacto del video oficial.</p>
+
+    <div class="minutero">
+      <div class="minutero-cap"><span>00:00</span><span>Duración de la declaración</span><span>18:00</span></div>
+      <div class="pista" id="pista"></div>
+      <p class="minutero-nota">Toca una marca para saltar al anuncio.</p>
+    </div>
+  </div>
+</header>
+
+<div class="aviso">
+  <div class="wrap">
+    <b>Esto es lo que el Gobierno dijo que hará.</b> No es un registro de obras cumplidas. Cada punto es un anuncio o una instrucción con fecha; para saber si se cumplió, usa los enlaces de verificación al final.
+  </div>
+</div>
+
+<div class="controles">
+  <div class="wrap">
+    <input class="buscar" id="buscar" type="search" placeholder="Buscar: contratos, tránsito, terremoto…" aria-label="Buscar en los anuncios">
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por frente"></div>
+  </div>
+</div>
+
+<main class="wrap" id="lista"></main>
+
+<section class="verificar">
+  <div class="wrap">
+    <h2>Verifícalo tú mismo</h2>
+    <p>Ninguna app reemplaza la fuente. Estos son los sitios donde un ciudadano puede contrastar cada anuncio.</p>
+    <ul class="enlaces">
+      <li><a href="https://youtu.be/fUGvd8pt8Vg" target="_blank" rel="noopener">
+        <span class="n">Video oficial de la declaración</span>
+        <span class="d">La fuente completa de este resumen</span></a></li>
+      <li><a href="https://www.colombiacompra.gov.co/secop/secop-ii" target="_blank" rel="noopener">
+        <span class="n">SECOP II — Colombia Compra Eficiente</span>
+        <span class="d">Busca cualquier contrato estatal por entidad, valor o contratista</span></a></li>
+      <li><a href="https://www.contraloria.gov.co/" target="_blank" rel="noopener">
+        <span class="n">Contraloría General de la República</span>
+        <span class="d">Vigilancia fiscal y hallazgos sobre uso de recursos públicos</span></a></li>
+      <li><a href="https://www.procuraduria.gov.co/" target="_blank" rel="noopener">
+        <span class="n">Procuraduría General de la Nación</span>
+        <span class="d">Actuaciones disciplinarias contra servidores públicos</span></a></li>
+      <li><a href="https://www.fiscalia.gov.co/" target="_blank" rel="noopener">
+        <span class="n">Fiscalía General de la Nación</span>
+        <span class="d">Ante quien se radicó el Libro de la Verdad</span></a></li>
+      <li><a href="https://www.runt.gov.co/" target="_blank" rel="noopener">
+        <span class="n">RUNT</span>
+        <span class="d">Estado de tu vehículo y licencia</span></a></li>
+      <li><a href="https://www.simit.org.co/" target="_blank" rel="noopener">
+        <span class="n">SIMIT</span>
+        <span class="d">Consulta de comparendos y multas de tránsito</span></a></li>
+      <li><a href="https://www.presidencia.gov.co/" target="_blank" rel="noopener">
+        <span class="n">Presidencia de la República</span>
+        <span class="d">Decretos, comunicados y alocuciones oficiales</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="acciones">
+    <a class="btn lleno" id="compartir" href="#">Compartir por WhatsApp</a>
+    <button class="btn" id="instalar" hidden>Instalar la app</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <strong>Sobre este resumen</strong>
+    Resumen ciudadano en lenguaje propio de una declaración pública. No reproduce el texto literal ni sustituye la fuente oficial. Los marcadores de tiempo corresponden al video enlazado. Contenido informativo, sin filiación política.
+    <br><br>
+    <span id="actualizado"></span>
+    <br><br>
+    Desarrollada por Vibras Positivas HM — Derechos de Autor Reservados
+  </div>
+</footer>
+
+<script>
+const VIDEO = "https://youtu.be/fUGvd8pt8Vg";
+const DURACION = 1080; // 18 min de pista para el minutero
+
+const EJES = [
+  {id:1, nombre:"Contratación pública", color:"#C8901E",
+   desc:"Una revisión de quién ha contratado con el Estado, en qué condiciones y con qué resultados."},
+  {id:2, nombre:"Reestructuración y austeridad", color:"#E0B05A",
+   desc:"Rediseñar la planta del Estado para bajar gasto y burocracia, con efecto en el presupuesto de 2027."},
+  {id:3, nombre:"Emergencias", color:"#7FA98D",
+   desc:"Respuesta a la crisis energética y al terremoto del 10 de agosto de 2026."},
+  {id:4, nombre:"Código de Tránsito", color:"#8FB0CC",
+   desc:"Reemplazar el código de 2002 y corregir el negocio de multas, grúas y trámites."},
+  {id:5, nombre:"Libro de la Verdad", color:"#AC9BC4",
+   desc:"Revisión del estado en que se recibió la administración pública anterior."}
+];
+
+const ANUNCIOS = [
+  {t:9, eje:1, etiq:"Apertura", tit:"Cierre de un consejo de más de siete horas",
+   txt:"El Presidente abre la declaración agradeciendo a su gabinete tras una sesión que superó las siete horas."},
+
+  {t:63, eje:1, etiq:"Anuncio", tit:"Revisión en cada rincón del Estado",
+   txt:"Se anuncia una revisión profunda y exhaustiva de toda la administración, con el propósito declarado de desmontar monopolios, roscas y redes de contratación."},
+  {t:111, eje:1, etiq:"Instrumento", tit:"Mapa de concentración contractual",
+   txt:"Se creará un mapa que permita auditar quiénes recibieron contratos en los últimos años, bajo qué modalidades y con qué resultados.",
+   dato:"Herramienta de contraste ciudadano: los mismos datos ya son públicos en SECOP II."},
+  {t:144, eje:1, etiq:"Foco", tit:"Contratos de prestación de servicios bajo lupa",
+   txt:"Atención especial a esta modalidad para identificar intermediaciones innecesarias entre el Estado y quien realmente ejecuta el trabajo."},
+  {t:209, eje:1, etiq:"Alcance", tit:"Abogados externos, liquidadores, consultorías y lobby",
+   txt:"El examen cubre expresamente la contratación de abogados por fuera de la planta, liquidadores, consultorías y actividades de cabildeo."},
+  {t:306, eje:1, etiq:"Alcance", tit:"Convenios interadministrativos y negocios fiduciarios",
+   txt:"Vigilancia estricta sobre los convenios con entidades públicas —en particular universidades estatales— y sobre los negocios fiduciarios.",
+   dato:"Contexto verificado: el Libro de la Verdad ya señalaba 107 contratos con universidades públicas entre 2024 y 2025."},
+
+  {t:536, eje:2, etiq:"Anuncio", tit:"Rediseño de la estructura del Estado",
+   txt:"El Gobierno buscará eliminar duplicidad de funciones, suprimir dependencias innecesarias y reducir gasto y burocracia."},
+  {t:608, eje:2, etiq:"Efecto", tit:"Insumo para el presupuesto de 2027",
+   txt:"Los resultados de esta revisión serán un pilar del Presupuesto General de la Nación de 2027 y del nuevo Plan Nacional de Desarrollo."},
+
+  {t:747, eje:3, etiq:"Apoyo", tit:"Empresas y trabajadores afectados",
+   txt:"Se discutieron medidas de apoyo para empresas y trabajadores golpeados por la crisis energética y por el terremoto. Se mencionaron los casos de Cerro Matoso y Nestlé."},
+  {t:774, eje:3, etiq:"Instrumento", tit:"Fondo Milagro para la reconstrucción",
+   txt:"Instrumento destinado a canalizar recursos y acelerar la reconstrucción de las regiones afectadas por el sismo.",
+   dato:"Nombre oficial verificado: <b>Fondo Milagro</b>. Anunciado el 12 de agosto de 2026 dentro de la emergencia económica, tras el sismo de magnitud 7,4 del 10 de agosto."},
+  {t:826, eje:3, etiq:"Advertencia", tit:"La urgencia no justifica el despilfarro",
+   txt:"Pese a los decretos de emergencia, el Presidente enfatiza que la premura no será excusa para gastar sin control los recursos públicos."},
+
+  {t:862, eje:4, etiq:"Instrucción", tit:"Un código de tránsito que reemplace el de 2002",
+   txt:"Junto a la Ministra de Transporte, Elsa Noguera, se ordenó avanzar en la redacción de un nuevo Código Nacional de Tránsito."},
+  {t:891, eje:4, etiq:"Objetivo", tit:"Multas, grúas y trámites justos",
+   txt:"El propósito declarado es que las sanciones y los trámites en RUNT y SIMIT sean proporcionales y dejen de operar como un negocio que despoja a la gente de su vehículo de trabajo.",
+   dato:"A quién toca de cerca: mototaxistas, transportadores y comerciantes que dependen de un solo vehículo."},
+
+  {t:981, eje:5, etiq:"Estrategia", tit:"El Libro de la Verdad como punto de partida",
+   txt:"El Gobierno puso en marcha una estrategia basada en este documento para establecer en qué estado recibió la administración pública.",
+   dato:"Contexto verificado: informe de 135 páginas radicado el 19 de agosto de 2026 ante Fiscalía, Contraloría y Procuraduría, con 82 casos señalados."},
+  {t:1025, eje:5, etiq:"Instrucción", tit:"Auditorías forenses sobre la administración anterior",
+   txt:"Se ordenó adelantar auditorías forenses sobre presuntas irregularidades, faltantes y actos de corrupción del gobierno saliente.",
+   dato:"Un señalamiento no es una condena. Corresponde a Fiscalía, Contraloría y Procuraduría determinar si hubo delito."},
+  {t:1068, eje:5, etiq:"Apoyo técnico", tit:"Acompañamiento del equipo consultor de Medellín",
+   txt:"Para procesar los hallazgos, la Presidencia contará con el respaldo técnico del equipo consultor del distrito de Medellín."}
+];
+
+const mmss = s => String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+const eje = id => EJES.find(e=>e.id===id);
+let filtro = 0, texto = "";
+
+/* Minutero */
+const pista = document.getElementById("pista");
+ANUNCIOS.forEach((a,i)=>{
+  const b=document.createElement("button");
+  b.className="tic"; b.dataset.eje=a.eje;
+  b.style.left=(a.t/DURACION*100)+"%";
+  b.title=mmss(a.t)+" · "+a.tit;
+  b.setAttribute("aria-label","Ir al anuncio del minuto "+mmss(a.t)+": "+a.tit);
+  b.onclick=()=>{
+    filtro=0; texto=""; document.getElementById("buscar").value="";
+    pintarChips(); pintar();
+    const el=document.getElementById("a"+i);
+    el.scrollIntoView({block:"start"});
+    el.classList.add("resaltado");
+    setTimeout(()=>el.classList.remove("resaltado"),2200);
+  };
+  pista.appendChild(b);
+});
+
+/* Chips */
+const chips=document.getElementById("chips");
+function pintarChips(){
+  chips.innerHTML="";
+  [{id:0,nombre:"Todo"}].concat(EJES).forEach(e=>{
+    const b=document.createElement("button");
+    b.className="chip"; b.textContent=e.nombre;
+    b.setAttribute("aria-pressed", filtro===e.id ? "true":"false");
+    b.onclick=()=>{filtro=e.id;pintarChips();pintar();};
+    chips.appendChild(b);
+  });
+}
+
+/* Lista */
+const lista=document.getElementById("lista");
+function pintar(){
+  const q=texto.trim().toLowerCase();
+  const vis=ANUNCIOS.map((a,i)=>({a,i})).filter(({a})=>
+    (filtro===0||a.eje===filtro) &&
+    (!q || (a.tit+" "+a.txt+" "+(a.dato||"")+" "+eje(a.eje).nombre).toLowerCase().includes(q))
+  );
+  lista.innerHTML="";
+  if(!vis.length){
+    lista.innerHTML='<p class="vacio">Ningún anuncio coincide. Prueba con otra palabra.</p>';
+    return;
+  }
+  let ejeActual=null;
+  vis.forEach(({a,i})=>{
+    if(a.eje!==ejeActual){
+      ejeActual=a.eje;
+      const e=eje(a.eje);
+      const h=document.createElement("h2");
+      h.className="grupo-tit";
+      h.innerHTML='<span class="punto" style="background:'+e.color+'"></span>'+e.nombre;
+      lista.appendChild(h);
+      const d=document.createElement("p");
+      d.className="grupo-desc"; d.textContent=e.desc;
+      lista.appendChild(d);
+    }
+    const f=document.createElement("article");
+    f.className="folio"; f.id="a"+i;
+    f.style.borderLeftColor=eje(a.eje).color;
+    f.innerHTML=
+      '<div class="folio-cab">'+
+        '<a class="tc" href="'+VIDEO+'?t='+a.t+'" target="_blank" rel="noopener">'+mmss(a.t)+'</a>'+
+        '<span class="etiq">'+a.etiq+'</span>'+
+      '</div>'+
+      '<h3>'+a.tit+'</h3>'+
+      '<p>'+a.txt+'</p>'+
+      (a.dato?'<div class="dato">'+a.dato+'</div>':'');
+    lista.appendChild(f);
+  });
+}
+
+document.getElementById("buscar").addEventListener("input",e=>{texto=e.target.value;pintar();});
+pintarChips(); pintar();
+
+/* Fecha real Colombia */
+const fmt=new Intl.DateTimeFormat("es-CO",{timeZone:"America/Bogota",dateStyle:"long",timeStyle:"short"});
+document.getElementById("actualizado").textContent="Consultado el "+fmt.format(new Date())+" (hora de Colombia).";
+
+/* Compartir */
+document.getElementById("compartir").addEventListener("click",e=>{
+  e.preventDefault();
+  const t="Qué anunció el Gobierno tras el Consejo de Ministros, minuto a minuto:\n"+location.href;
+  if(navigator.share){navigator.share({title:document.title,text:t}).catch(()=>{});}
+  else{window.open("https://wa.me/?text="+encodeURIComponent(t),"_blank");}
+});
+
+/* Instalar */
+let prompt_=null;
+addEventListener("beforeinstallprompt",e=>{
+  e.preventDefault(); prompt_=e;
+  const b=document.getElementById("instalar");
+  b.hidden=false;
+  b.onclick=async()=>{b.hidden=true;prompt_.prompt();await prompt_.userChoice;prompt_=null;};
+});
+if("serviceWorker" in navigator){
+  addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
+</script>
+</body>
+</html>
